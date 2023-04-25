@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 *{
     padding: 0%;
     margin: 0%;
@@ -6,29 +7,60 @@
 body{
     width:100%;
     height: 100%;
-    background: #0f3854;
+    background:url(./bote-en-medio-del-mar-al-atardecer_3840x2400_xtrafondos.com.jpg);
     background-size: 100%;
+    display: flex;
+    justify-content: center
 }
 p{
     margin: 0;
     padding: 0;
 }
 .reloj{
-    font-family: fantasy;
+    background-color: rgba(22, 15, 15,.8);
+    width: 400px;
+    height: 400px;
+    font-family: calibri;
     color: #ffffff;
     text-align: center;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform:translate(-50,-50) ;
-    text-shadow: 0 20px #231c1c ;
+    border-radius: 50%;
+    border:4px solid rgb(137, 129, 129);
+    padding: 105px 0;
+    top: 50px;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    
+    text-shadow: 0 4.4px #543c3c ;
 }
 .tiempo{
     letter-spacing: 0.05em;
-    font-size: 80px;
+    font-size: 90px;
     padding: 5px  0;
+    color: rgb(212, 185, 185);
 }
 .fecha{
     letter-spacing: 0.1em;
     font-size: 24px;
+}
+.footer{
+    color: #b5a3a3;
+    font-size: 2rem;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bold;
+    text-transform: lowercase;
+    text-shadow: 1px 1px 1px #28251b;
+    text-align: center;
+}
+@media screen  and (max-width:858px) {
+    body{
+        background-repeat: no-repeat;
+        background-size: 300%;
+    }
+    .footer{
+        text-align: center;
+    }
+    
 }
